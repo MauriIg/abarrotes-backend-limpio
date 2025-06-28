@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 export const stripeWebhook = async (req, res) => {
-  console.log("🔔 Request recibido en /api/webhook");
+  console.log("🔔 Request recibido en /webhook");
 
   const sig = req.headers["stripe-signature"];
   let event;
