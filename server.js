@@ -24,8 +24,9 @@ const app = express();
 
 // ✅ CORS seguro y flexible
 const allowedOrigins = [
-  "http://localhost:5173",                    // para desarrollo local
-  process.env.FRONTEND_URL                   // dominio oficial en Vercel
+  "http://localhost:5173",
+  "https://abarrotes-frontend.vercel.app",
+  "https://abarrotes-frontend-gmctypknc-mauricios-projects-4b766890.vercel.app"
 ];
 
 app.use(cors({
